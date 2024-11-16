@@ -1,7 +1,7 @@
 #> kf:blocks/crystalizer/_remove
 
 # Drop Item
-summon item ~ ~ ~ {Item:{id:"minecraft:skeleton_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Crystalizer","italic":false}'},EntityTag:{id:"marker",Rotation:[0f,0f],Tags:[kf.Crystalizer,.temp,kf.RequiresPower,kf.HighUsage]}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:phantom_spawn_egg",count:1,components:{"minecraft:entity_data":{id:"minecraft:marker",Tags:["kf.Crystalizer",".temp","kf.RequiresPower","kf.HighUsage"]},"minecraft:item_name":'{"italic":false,"text":"Crystalizer"}'}}}
 
 # Kill
 kill @s
