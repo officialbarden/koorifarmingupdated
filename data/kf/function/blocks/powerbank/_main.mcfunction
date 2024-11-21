@@ -1,7 +1,7 @@
 #> kf:blocks/powerbank/_main
 
 # If .temp, place block
-execute if entity @s[tag=!kf.Placed] align xyz positioned ~.5 ~.9 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/powerbank/_place
+execute as @s[tag=!kf.Placed] at @s align xyz positioned ~.5 ~.9 ~.5 run function kf:blocks/powerbank/_place
 
 tag @s remove kf.Inactive
 
@@ -19,6 +19,7 @@ scoreboard players set @s[scores={kf.Power=3000..}] kf.Power 3000
 
 # Display Power to nearby
 execute if entity @p[distance=..1.5] run function kf:blocks/powerbank/display_power
+execute positioned ~ ~1 ~ if entity @p[distance=..1.5] run function kf:blocks/powerbank/debug/pre_ray
 
 # Reset scores
 scoreboard players reset @s kf.PowerUsage

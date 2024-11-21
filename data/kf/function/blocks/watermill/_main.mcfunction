@@ -8,7 +8,7 @@ execute if entity @s[tag=.rotate] run function kf:blocks/watermill/adjust
     execute if entity @s[tag=kf.Placed] store success score .success k.Values unless block ~ ~ ~ oak_fence run function kf:blocks/watermill/_remove
 
 # If tag temp, place
-execute if entity @s[tag=!kf.Placed] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/watermill/_place
+execute as @s[tag=!kf.Placed] at @s align xyz positioned ~.5 ~.5 ~.5 run function kf:blocks/watermill/_place
 
 # Rotation
 scoreboard players reset .success k.Values

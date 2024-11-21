@@ -4,11 +4,10 @@
 
 # Check if id exists
 $execute store success score .success k.Values unless data storage kf:trading prices."$(id)"
-execute if score .success k.Values matches 1 run function kf:blocks/trading_post/swap_slot
-execute if score .success k.Values matches 1 run return 0
+execute if score .success k.Values matches 1 run return run function kf:blocks/trading_post/swap_slot
 
 # Get Count
-$scoreboard players set .give k.Values $(Count)
+$scoreboard players set .give k.Values $(count)
 
 # Check Value
     ## Retrieve

@@ -10,6 +10,9 @@ tp ~ ~ ~
 # Place block
 fill ~ ~ ~ ~ ~ ~ detector_rail replace air
 
+#> fix rotation:
+data modify entity @s Rotation set value [0f,0f]
+
 # Sound
 playsound block.scaffolding.place block @a ~ ~ ~ 1 2
 
