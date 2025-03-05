@@ -1,0 +1,18 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "chest": {
+        "items": [
+          "elytra"
+        ],
+        "predicates": {
+          "minecraft:custom_data": {
+            "k.Wings": 1
+          }
+        }
+      }
+    }
+  }
+}

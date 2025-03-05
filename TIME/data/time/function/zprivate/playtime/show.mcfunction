@@ -1,0 +1,1 @@
+scoreboard players operation #time.Playtime.Ticks time.Values = @s time.Playtime

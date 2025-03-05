@@ -1,0 +1,44 @@
+{
+    "type": "empty",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "elytra",
+            "functions": [
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"text\":\"Wings\",\"color\":\"#E0B0FF\",\"italic\":false}",
+                  "minecraft:custom_data": {
+                    "k.Wings": 1
+                  },
+                  "lore": [
+                    "\"When life gives you lemons\"",
+                    "\"don't make lemonade.\"",
+                    "\"Make life take the lemons back!\"",
+                    "\"GET MAD!\"",
+                    "\"I don't want your damn lemons,\"",
+                    "\"what am I supposed to do with these?\"",
+                    "\"Demand to see life's manager.\"",
+                    "\"Make life rue the day it thought it could\"",
+                    "\"give Cave Johnson lemons. Do you know who I am?\"",
+                    "\"I'm the man who's gonna burn your house down!\"",
+                    "\"WITH THE LEMONS.\"",
+                    "\"I'm going to get my engineers\"",
+                    "\"to invent a combustible lemon\"",
+                    "\"that burns your house down!\"",
+                    "\"\"",
+                    "\"\"",
+                    "\"Wings by Koori <3\""
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

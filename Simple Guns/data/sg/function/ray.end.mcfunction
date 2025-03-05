@@ -1,0 +1,5 @@
+execute if data storage k.temp:temp gunInfo.command run function sg:run.command with storage k.temp:temp gunInfo
+execute if data storage k.temp:temp gunInfo.explosion{active:true,can_damage_ground:true,override:true} if predicate ass:testzone run summon tnt ~ ~ ~ {fuse:0,explosion_power:0.01}
+execute if data storage k.temp:temp gunInfo.explosion{active:true,can_damage_ground:true,override:true} unless predicate ass:protected_area run summon tnt ~ ~ ~ {fuse:0,explosion_power:2.0}
+execute if data storage k.temp:temp gunInfo.explosion{active:true,can_damage_ground:true} run summon creeper ~ ~ ~ {Fuse:0,attributes:[{base:0.01d,id:"minecraft:generic.scale"}]}
+execute if data storage k.temp:temp gunInfo.explosion{active:true,can_damage_ground:false} run summon creeper ~ ~ ~ {Fuse:0,ExplosionRadius:0,attributes:[{base:0.01d,id:"minecraft:generic.scale"}]}
