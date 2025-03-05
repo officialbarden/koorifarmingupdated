@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "player": {
+              "flags": {
+                "is_sneaking": true
+              }
+            },
+            "entity": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"k.Bank\"]}"
+            }
+          }
+        }
+      },
+      "rewards": {
+        "function": "kbank:bank_retrieve"
+      }
+}
