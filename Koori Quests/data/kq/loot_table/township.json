@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sunflower",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": {"k.Coin":true,"Amount":72}
+              },
+              {
+                "mode":"append",
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Fancy Coin!",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Coin",
+                  "color": "gold",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}
+  
